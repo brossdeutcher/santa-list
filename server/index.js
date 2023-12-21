@@ -10,6 +10,8 @@ app.get('/', (req, res) => {
   // res.send('Hello World!!')
 })
 
+app.use('/auth', require('./auth'))
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
 })
